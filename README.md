@@ -52,19 +52,19 @@ OpenSSH php7 默认自带，如果没有也要安装
 
 本软件共有3个主文件：
 
+```
 index.php 主页，用于接待、提交IP，提交后跳转至flix
-
 edit.php 执行页，用于校验IP可用性、操作被控端
-
 flix.php 提交页，接受参数，include了edit，优化界面
+```
 
 其中flix不需要配置
 
-##### index.php：#####
+#### index.php： ####
 
 将.hyp.ink替换成你自己的私人IP后缀
 
-##### edit.php: #####
+#### edit.php:  ####
 将被控端用户名、密码、IP、端口填写好
 
 将.hyp.ink替换成你自己的私人IP后缀
