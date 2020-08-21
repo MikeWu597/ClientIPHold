@@ -1,6 +1,8 @@
 # ClientIPHold #
 本软件用于Hypixel加速IP的用户端IP绑定
 
+基于GPL v3开源，不删除作者标签是对作者的尊重
+
 ### [用户使用说明](https://github.com/MikeWu597/ClientIPHold/blob/master/Usage.md) ###
 
 ### ToDo List ###
