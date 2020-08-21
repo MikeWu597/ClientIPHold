@@ -3,7 +3,7 @@
 <head>
 <title>Hypixel加速IP管理界面</title>
 <meta charset="utf-8">
-<meta name="author" content="MikeWu597">
+<meta name="author" content="MikeWu597 请勿删除此标记">
 <style type="text/css">
 <!--
 body {
