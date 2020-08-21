@@ -1,6 +1,12 @@
 # ClientIPHold #
 本软件用于Hypixel加速IP的用户端IP绑定
 
+### [用户使用说明](https://github.com/MikeWu597/ClientIPHold/blob/master/Usage.md) ###
+
+### ToDo List ###
+
+1.使用统一配置文件
+
 ### 曾经试过以下方案： ###
 
 1.SSH控制iptables放行 失败原因：丢包率太高登录不稳定
