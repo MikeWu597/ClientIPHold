@@ -11,6 +11,7 @@
 <br>
 ### 使用的库/软件 ###
 <br>
+
 Aliyun CLI
 
 测试环境 LNMP
@@ -25,6 +26,7 @@ LNMP环境推荐使用无人值守
 `wget http://soft.vpser.net/lnmp/lnmp1.7.tar.gz -cO lnmp1.7.tar.gz && tar zxf lnmp1.7.tar.gz && cd lnmp1.7 && ./install.sh lnmp `
 
 阿里云CLI安装
+
 `
 https://help.aliyun.com/document_detail/121541.html?spm=a2c4g.11186623.4.1.584852afwLlzhQ
 `
@@ -53,6 +55,7 @@ L26: 将.hyp.ink替换成你自己的私人IP后缀
 
 #### edit.php:  ####
 L2-5: 将被控端安全组ID，域名后缀，AccessKey ID与Secret填写好
+
 L19: 默认无需配置，可按需修改：地域上海，端口25565，协议TCP，权值1，仅绑定单IP而非IP段
 
 没了
