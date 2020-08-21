@@ -7,11 +7,11 @@
 
 2.服务器ping IP，如果校验成功则继续
 
-3.操作被控端（IP入口服务器）iptables放行用户
+3.操作被控端安全组放行用户
 <br>
 ### 使用的库/软件 ###
 <br>
-Libssh SSH2 PHP 7.x
+Aliyun CLI
 
 测试环境 LNMP
 
@@ -24,23 +24,10 @@ LNMP环境推荐使用无人值守
 
 `wget http://soft.vpser.net/lnmp/lnmp1.7.tar.gz -cO lnmp1.7.tar.gz && tar zxf lnmp1.7.tar.gz && cd lnmp1.7 && ./install.sh lnmp `
 
-SSH2安装（用于操控被控端放行IP，被、主控端可以一台机器实现）
-
-```
-yum -y install git libssh2-devel
-git clone https://git.php.net/repository/pecl/networking/ssh2.git
-cd ssh2
-/usr/local/php7.3.5/bin/phpize 
-./configure --with-php-config=/usr/local/php7.3.5/bin/php-config
-make
-make install
-echo "extension=ssh2.so">>/usr/local/php7.3.5/etc/php.ini
-rm -rf ../ssh2
-service php-fpm restart
-```
-P.S 请替换PHP安装路径
-
-OpenSSH php7 默认自带，如果没有也要安装
+阿里云CLI安装
+`
+https://help.aliyun.com/document_detail/121541.html?spm=a2c4g.11186623.4.1.584852afwLlzhQ
+`
 
 没了
 
@@ -62,10 +49,11 @@ flix.php 提交页，接受参数，include了edit，优化界面
 
 #### index.php： ####
 
-将.hyp.ink替换成你自己的私人IP后缀
+L26: 将.hyp.ink替换成你自己的私人IP后缀
 
 #### edit.php:  ####
-将被控端用户名、密码、IP、端口填写好
+L2-5: 将被控端安全组ID，域名后缀，AccessKey ID与Secret填写好
+L19: 默认无需配置，可按需修改：地域上海，端口25565，协议TCP，权值1，仅绑定单IP而非IP段
 
-将.hyp.ink替换成你自己的私人IP后缀
+没了
 
